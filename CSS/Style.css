@@ -1,0 +1,63 @@
+.light {
+  --color-white: #fff;
+  --color-light: #8f8f92;
+  --color-highlighter: #56e39f;
+  --color-Secondary: #2ec4b6;
+  --color-Primary: #006d77;
+  --color-Dark: #1e1e24;
+  --color-black: #000000;
+  --color-footer: #1e1e24;
+}
+
+.dark {
+  --color-white: #1e1e24;
+  --color-light: #fff;
+  --color-highlighter: #cbff4d;
+  --color-Secondary: #84dd63;
+  --color-Primary: #6baa75;
+  --color-Dark: #f9f9f9;
+  --color-black: #8f8f92;
+  --color-footer: #69747c;
+}
+
+.Purple {
+  --color-white: #efe9ae;
+  --color-light: #808080;
+  --color-highlighter: #efb9cb;
+  --color-Secondary: #9b5de5;
+  --color-Primary: #59114d;
+  --color-Dark: #5f5449;
+  --color-black: #808080;
+  --color-footer: #5f5449;
+}
+
+.Red {
+  --color-white: #130303;
+  --color-light: #fff;
+  --color-highlighter: #ff6f61;
+  --color-Secondary: #db445b;
+  --color-Primary: #b71830;
+  --color-Dark: #fceff0;
+  --color-black: #808080;
+  --color-footer: #88797a;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* Home page */
+
+.backgroundset {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-Primary),
+    var(--color-highlighter)
+  );
+  width: 100vw;
+  height: 100vh;
+}
