@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posters - Gallery</title>
+    <link rel="stylesheet" href="../Style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="logo.html" class="nav-link">Logos</a>
+        </li>
+        <li class="nav-item">
+          <a href="illustrations.html" class="nav-link">Illustrations</a>
+        </li>
+        <li class="nav-item">
+          <a href="posters.html" class="nav-link active">Posters</a>
+        </li>
+        <li class="nav-item">
+          <a href="others.html" class="nav-link">Others</a>
+        </li>
+      </ul>
+      <div class="theme-switcher">
+        <div class="theme-btn light-btn active" data-theme="light"></div>
+        <div class="theme-btn dark-btn" data-theme="dark"></div>
+        <div class="theme-btn purple-btn" data-theme="Purple"></div>
+        <div class="theme-btn red-btn" data-theme="Red"></div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="page-content">
+      <div class="page-header">
+        <h1 class="page-title">Poster Designs</h1>
+        <p class="page-subtitle">
+          Eye-catching posters designed for events, movies, and marketing
+          campaigns that deliver strong visual impact.
+        </p>
+      </div>
+      <div class="cards-grid" id="posters-grid">
+        <!-- Cards will be generated with JavaScript -->
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <img src="" alt="" class="modal-img" />
+        <div class="modal-info">
+          <h3 class="modal-title"></h3>
+          <p class="modal-desc"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+      // Load posters data
+      loadCardData("posters", "posters-grid");
+    </script>
+  </body>
+</html>

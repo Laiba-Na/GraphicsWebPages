@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: background-color 0.3s, color 0.3s;
-}
-
 /* Theme Colors */
 .light {
   --color-white: #fff;
@@ -48,6 +41,13 @@
   --color-Dark: #fceff0;
   --color-black: #808080;
   --color-footer: #88797a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 body {
@@ -149,6 +149,42 @@ body {
 
 .red-btn {
   background: linear-gradient(135deg, #ff6f61, #b71830);
+}
+
+/* Home Page */
+.BgGr {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    135deg,
+    var(--color-highlighter) 0%,
+    var(--color-Primary) 100%
+  );
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn {
+  background-color: var(--color-white);
+  color: var(--color-Primary);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
 }
 
 /* Page Content */
@@ -322,27 +358,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* Tab content */
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-  animation: fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
@@ -371,6 +386,14 @@ body {
 
   .page-title {
     font-size: 2rem;
+  }
+
+  .home-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
   }
 }
 
